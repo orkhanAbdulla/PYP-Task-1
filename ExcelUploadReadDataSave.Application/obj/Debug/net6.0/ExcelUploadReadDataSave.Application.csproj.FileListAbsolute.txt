@@ -1,0 +1,15 @@
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\bin\Debug\net6.0\ExcelUploadReadDataSave.Application.deps.json
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\bin\Debug\net6.0\ExcelUploadReadDataSave.Application.dll
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\bin\Debug\net6.0\ExcelUploadReadDataSave.Application.pdb
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\bin\Debug\net6.0\ExcelUploadReadDataSave.Domain.dll
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\bin\Debug\net6.0\ExcelUploadReadDataSave.Domain.pdb
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\obj\Debug\net6.0\ExcelUploadReadDataSave.Application.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\obj\Debug\net6.0\ExcelUploadReadDataSave.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\obj\Debug\net6.0\ExcelUploadReadDataSave.Application.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\obj\Debug\net6.0\ExcelUploadReadDataSave.Application.AssemblyInfo.cs
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\obj\Debug\net6.0\ExcelUploadReadDataSave.Application.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\obj\Debug\net6.0\ExcelUploadReadDataSave.Application.csproj.CopyComplete
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\obj\Debug\net6.0\ExcelUploadReadDataSave.Application.dll
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\obj\Debug\net6.0\refint\ExcelUploadReadDataSave.Application.dll
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\obj\Debug\net6.0\ExcelUploadReadDataSave.Application.pdb
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Application\obj\Debug\net6.0\ref\ExcelUploadReadDataSave.Application.dll
