@@ -945,7 +945,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "ExcelUploadReadDataSave.Domain": "1.0.0"
+          "ExcelUploadReadDataSave.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.8"
         },
         "compile": {
           "bin/placeholder/ExcelUploadReadDataSave.Application.dll": {}

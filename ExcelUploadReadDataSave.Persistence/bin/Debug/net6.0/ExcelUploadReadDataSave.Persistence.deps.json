@@ -574,7 +574,8 @@
       },
       "ExcelUploadReadDataSave.Application/1.0.0": {
         "dependencies": {
-          "ExcelUploadReadDataSave.Domain": "1.0.0"
+          "ExcelUploadReadDataSave.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.8"
         },
         "runtime": {
           "ExcelUploadReadDataSave.Application.dll": {}
