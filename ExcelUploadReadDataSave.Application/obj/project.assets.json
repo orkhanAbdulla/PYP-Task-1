@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ExcelUploadReadDataSave.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ExcelUploadReadDataSave.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExcelUploadReadDataSave.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ExcelUploadReadDataSave.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ExcelUploadReadDataSave.Domain/ExcelUploadReadDataSave.Domain.csproj",
+      "msbuildProject": "../ExcelUploadReadDataSave.Domain/ExcelUploadReadDataSave.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ExcelUploadReadDataSave.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\hp\\.nuget\\packages\\": {},
@@ -41,7 +60,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\hp\\Desktop\\ExcelUploadReadDataSave\\ExcelUploadReadDataSave.Domain\\ExcelUploadReadDataSave.Domain.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\ExcelUploadReadDataSave\\ExcelUploadReadDataSave.Domain\\ExcelUploadReadDataSave.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
