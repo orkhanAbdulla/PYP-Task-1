@@ -15,6 +15,7 @@ namespace ExcelUploadReadDataSave.Persistence.Extentions
     {
         public static void AddPersistenceServices(this IServiceCollection services)
         {
+           
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.ConnectionString));
         }
     }

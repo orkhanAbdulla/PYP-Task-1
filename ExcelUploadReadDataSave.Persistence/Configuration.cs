@@ -14,9 +14,9 @@ namespace ExcelUploadReadDataSave.Persistence
             get
             {
                 ConfigurationManager configuration = new();
-                configuration.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../../Presentation/E-CommerceApi.Api"));
+                configuration.SetBasePath(Directory.GetCurrentDirectory());
                 configuration.AddJsonFile("appsettings.json");
-                return configuration.GetConnectionString("PostgreSQL");
+                return configuration.GetConnectionString("DefaultConnection");
             }
         }
     }
