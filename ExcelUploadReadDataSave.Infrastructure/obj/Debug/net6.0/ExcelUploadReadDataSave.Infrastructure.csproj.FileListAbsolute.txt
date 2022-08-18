@@ -1,0 +1,12 @@
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Infrastructure\bin\Debug\net6.0\ExcelUploadReadDataSave.Infrastructure.deps.json
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Infrastructure\bin\Debug\net6.0\ExcelUploadReadDataSave.Infrastructure.dll
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Infrastructure\bin\Debug\net6.0\ExcelUploadReadDataSave.Infrastructure.pdb
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Infrastructure\obj\Debug\net6.0\ExcelUploadReadDataSave.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Infrastructure\obj\Debug\net6.0\ExcelUploadReadDataSave.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Infrastructure\obj\Debug\net6.0\ExcelUploadReadDataSave.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Infrastructure\obj\Debug\net6.0\ExcelUploadReadDataSave.Infrastructure.AssemblyInfo.cs
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Infrastructure\obj\Debug\net6.0\ExcelUploadReadDataSave.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Infrastructure\obj\Debug\net6.0\ExcelUploadReadDataSave.Infrastructure.dll
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Infrastructure\obj\Debug\net6.0\refint\ExcelUploadReadDataSave.Infrastructure.dll
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Infrastructure\obj\Debug\net6.0\ExcelUploadReadDataSave.Infrastructure.pdb
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Infrastructure\obj\Debug\net6.0\ref\ExcelUploadReadDataSave.Infrastructure.dll
