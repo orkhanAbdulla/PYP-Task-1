@@ -1,0 +1,12 @@
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Domain\bin\Debug\net6.0\ExcelUploadReadDataSave.Domain.deps.json
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Domain\bin\Debug\net6.0\ExcelUploadReadDataSave.Domain.dll
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Domain\bin\Debug\net6.0\ExcelUploadReadDataSave.Domain.pdb
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Domain\obj\Debug\net6.0\ExcelUploadReadDataSave.Domain.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Domain\obj\Debug\net6.0\ExcelUploadReadDataSave.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Domain\obj\Debug\net6.0\ExcelUploadReadDataSave.Domain.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Domain\obj\Debug\net6.0\ExcelUploadReadDataSave.Domain.AssemblyInfo.cs
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Domain\obj\Debug\net6.0\ExcelUploadReadDataSave.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Domain\obj\Debug\net6.0\ExcelUploadReadDataSave.Domain.dll
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Domain\obj\Debug\net6.0\refint\ExcelUploadReadDataSave.Domain.dll
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Domain\obj\Debug\net6.0\ExcelUploadReadDataSave.Domain.pdb
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Domain\obj\Debug\net6.0\ref\ExcelUploadReadDataSave.Domain.dll

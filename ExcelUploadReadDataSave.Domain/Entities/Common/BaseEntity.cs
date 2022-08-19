@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ExcelUploadReadDataSave.Domain.Entities.Common
 {
-    internal class BaseEntity
+    public class BaseEntity
     {
+        public int Id { get; set; }
+        public DateTime CreateAt { get; set; }
     }
 }
