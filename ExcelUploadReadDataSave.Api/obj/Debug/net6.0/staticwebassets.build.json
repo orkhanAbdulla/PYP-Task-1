@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "WNIddIKZIzAXZP41oOryzp10qubWV9hS9o782ehFHS0=",
+  "Source": "ExcelUploadReadDataSave.Api",
+  "BasePath": "_content/ExcelUploadReadDataSave.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ExcelUploadReadDataSave.Api\\wwwroot",
+      "Source": "ExcelUploadReadDataSave.Api",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\ExcelUploadReadDataSave\\ExcelUploadReadDataSave.Api\\wwwroot\\",
+      "BasePath": "_content/ExcelUploadReadDataSave.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\hp\\Desktop\\ExcelUploadReadDataSave\\ExcelUploadReadDataSave.Api\\wwwroot\\cc403d36-89f8-43b3-85dc-2e4c71054975example_data.xlsx",
+      "SourceId": "ExcelUploadReadDataSave.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\ExcelUploadReadDataSave\\ExcelUploadReadDataSave.Api\\wwwroot\\",
+      "BasePath": "_content/ExcelUploadReadDataSave.Api",
+      "RelativePath": "cc403d36-89f8-43b3-85dc-2e4c71054975example_data.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\cc403d36-89f8-43b3-85dc-2e4c71054975example_data.xlsx"
+    }
+  ]
+}
