@@ -69,6 +69,7 @@ namespace ExcelUploadReadDataSave.Infrastructure.Services
                 Parametrs.Add(rows);
             }
             stream.Close();
+            DeleteFile(Path);
 
             List<Report> reports = new();
 
@@ -97,6 +98,14 @@ namespace ExcelUploadReadDataSave.Infrastructure.Services
                 }
             }
             return reports;
+        }
+
+        public void DeleteFile(string path)
+        {
+            if (System.IO.File.Exists(path))
+            {
+                System.IO.File.Delete(path);
+            }
         }
     }
 }
