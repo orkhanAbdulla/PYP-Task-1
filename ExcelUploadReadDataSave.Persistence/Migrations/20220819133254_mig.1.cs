@@ -23,7 +23,7 @@ namespace ExcelUploadReadDataSave.Persistence.Migrations
                     ManufacturingPrice = table.Column<int>(type: "int", nullable: false),
                     SalePrice = table.Column<int>(type: "int", nullable: false),
                     GrossSales = table.Column<long>(type: "bigint", nullable: false),
-                    Discounts = table.Column<int>(type: "int", nullable: false),
+                    Discounts = table.Column<double>(type: "float", nullable: false),
                     Sales = table.Column<double>(type: "float", nullable: false),
                     COGS = table.Column<int>(type: "int", nullable: false),
                     Profit = table.Column<double>(type: "float", nullable: false),

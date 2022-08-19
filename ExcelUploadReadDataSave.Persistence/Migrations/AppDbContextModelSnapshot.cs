@@ -47,8 +47,8 @@ namespace ExcelUploadReadDataSave.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Discounts")
-                        .HasColumnType("int");
+                    b.Property<double>("Discounts")
+                        .HasColumnType("float");
 
                     b.Property<long>("GrossSales")
                         .HasColumnType("bigint");

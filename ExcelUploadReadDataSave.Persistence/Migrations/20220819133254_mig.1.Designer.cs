@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ExcelUploadReadDataSave.Persistence.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220817194137_mig.1")]
+    [Migration("20220819133254_mig.1")]
     partial class mig1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -49,8 +49,8 @@ namespace ExcelUploadReadDataSave.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Discounts")
-                        .HasColumnType("int");
+                    b.Property<double>("Discounts")
+                        .HasColumnType("float");
 
                     b.Property<long>("GrossSales")
                         .HasColumnType("bigint");
