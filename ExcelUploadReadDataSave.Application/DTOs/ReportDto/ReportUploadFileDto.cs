@@ -11,4 +11,6 @@ namespace ExcelUploadReadDataSave.Application.DTOs.ReportDto
     {
         public IFormFile File { get; set; }
     }
+ 
+
 }
