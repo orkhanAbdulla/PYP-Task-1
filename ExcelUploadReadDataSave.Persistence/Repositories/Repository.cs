@@ -28,7 +28,7 @@ namespace ExcelUploadReadDataSave.Persistence.Repositories
         public async Task<T> GetSingleAsync(Expression<Func<T, bool>> method)
             => await Table.FirstOrDefaultAsync(method);
         public async Task<T> GetById(int id)
-            => await Table.FirstOrDefaultAsync(data => data.Id == id);
+            => await Table.FindAsync(id);
         public async Task<bool> AddAsync(T model)
         {
             EntityEntry<T> entity = await Table.AddAsync(model);
@@ -37,6 +37,7 @@ namespace ExcelUploadReadDataSave.Persistence.Repositories
 
         public async Task<bool> AddRangeAsync(List<T> datas)
         {
+            await Table.AddRangeAsync(datas);
             return true;
         }
         public bool Remove(T model)

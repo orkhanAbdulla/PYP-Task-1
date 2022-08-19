@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "jWCsO7RDV/pge3z9J1CZm/Qm28wk2tDr8q+mXF+VW7AbUREMUWKliag97s7VvTHx3aajDcbNAvmAi5QILhQVAg==",
+  "dgSpecHash": "48hxKzLWS3/rxQMMnu3E673yvOWDH6CcwxUCn6gku/A4AtG3js3RaXl2HRJhGurFg8n7+HWYvZiw9Z73K0XqkQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\hp\\Desktop\\ExcelUploadReadDataSave\\ExcelUploadReadDataSave.Persistence\\ExcelUploadReadDataSave.Persistence.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
