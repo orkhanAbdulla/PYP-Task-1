@@ -1,4 +1,5 @@
-﻿using ExcelUploadReadDataSave.Application.DTOs.ReportDto;
+﻿
+using ExcelUploadReadDataSave.Application.DTOs.ReportDto;
 using ExcelUploadReadDataSave.Application.Services;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Microsoft.Extensions.Configuration;
@@ -15,7 +16,7 @@ namespace ExcelUploadReadDataSave.Infrastructure.Services
     public class MailService : IMailService
     {
         private readonly ISendGridClient _sendGridClient;
-        public MailService(ISendGridClient sendGridClient, IConfiguration configuration, IFileManager fileManager)
+        public MailService(ISendGridClient sendGridClient)
         {
             _sendGridClient = sendGridClient;
         }
@@ -30,13 +31,13 @@ namespace ExcelUploadReadDataSave.Infrastructure.Services
                 From = new EmailAddress(fromEmail, fromName),
                 Subject = "File Attached Report",
                 PlainTextContent = "Check Attached File",
+
             };
-            await msg.AddAttachmentAsync(
-                reportAtchementlDto.Atchement.FileName,
-                reportAtchementlDto.Atchement.OpenReadStream(),
-                reportAtchementlDto.Atchement.ContentType,
-                "attchement"
-                ); ;  
+            using (var fileStream = File.OpenRead(reportAtchementlDto.Atchement))
+            {
+                await msg.AddAttachmentAsync("file.xlsx", fileStream);
+               
+            }
             msg.AddTo(reportAtchementlDto.toEmail);
 
             var response = await _sendGridClient.SendEmailAsync(msg);

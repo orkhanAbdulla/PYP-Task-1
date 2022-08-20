@@ -8,10 +8,13 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
+using Syncfusion.XlsIO;
+using ClosedXML.Excel;
 
 namespace ExcelUploadReadDataSave.Infrastructure.Services
 {
-    public class FileManager:IFileManager
+    public class FileManager : IFileManager
     {
         public bool IsValidType(ReportUploadFileDto file, string type)
         {
@@ -99,7 +102,7 @@ namespace ExcelUploadReadDataSave.Infrastructure.Services
             }
             return reports;
         }
-        
+
         public void DeleteFile(string path)
         {
             if (System.IO.File.Exists(path))
@@ -109,102 +112,83 @@ namespace ExcelUploadReadDataSave.Infrastructure.Services
 
         }
 
-        public string EmailHtml(ReportAtchementlDto reportEmailDto)
+        public string TemplateHtml(List<ReportGetDto> ReportFilterData)
         {
-            return @"<html><head>
-		<meta charset='utf-8' />
-		<title></title>
-		<style>
-		@mixin media() {
-		@media (min-width: 768px) {
-			@content;
-		}
-	   }
- 
-	body, html {
-	font-family: 'Vollkorn', serif;
-	font-weight: 400;
-	line-height: 1.3;
-	font-size: 16px;
-	}
- 
-	.siteTitle {
-	display: block;
-	font-weight: 900;
-	font-size: 30px;
-	margin: 20px 0;
-	
-	@include media {
-		font-size: 60px;
-	}
-	}
- 
-	header,
-	main,
-	footer {
-	max-width: 960px;
-	margin: 0 auto;
-	}
- 
-	.card {
-	height: 400px;
-	position: relative;
-	padding: 20px;
-	box-sizing: border-box;
-	display: flex;
-	align-items: flex-end;
-	text-decoration: none;
-	border: 4px solid #b0215e;
-	margin-bottom: 20px;
-	background-image: url('https://baylorlariat.com/wp-content/uploads/2018/02/Iron-Man-Movie_Poster_2008.jpg');
-		background-size: cover;
-	
-	@include media {
-		height: 500px;
-	}
-	}
- 
-	.inner {
-	height: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center; 
-	background: white;
-	box-sizing: border-box;
-	padding: 40px;
-	
-	@include media {
-		width: 50%;
-		height: 100%;
-	}
-	}
- 
-	.title {
-	font-size: 24px;
-	color: black;  
-	text-align: center;
-	font-weight: 700;
-	color: #181818;
-	text-shadow: 0px 2px 2px #a6f8d5;
-	position: relative;
-	margin: 0 0 20px 0;
-	
-	@include media {
-		font-size: 30px;
-	}
-	}
-	</style>
-</head>
-<body>
-<div  class='card'>
-  <div class='inner'>
-	<h2 class='title'>{{name}}</h2>
-	<time class='subtitle'>Supper<time>
-  </div>
-</div>
-</body>
-</html>".Replace("{{name}}", reportEmailDto.toEmail);
+            var sb = new StringBuilder();
+            sb.Append(@"
+                   <html>
+                        <head></head>
+                        <body>
+                            <div class='header'<h1>This is the generated Pdf report!!!</h1></div>
+                            <table align='center'>
+                                <tr>
+                                    <th>Segment</th>
+                                    <th>UnitsSold</th>
+                                    <th>GrossSales</th>
+                                    <th>Discounts</th>
+                                    <th>Profit</th>
+                                </tr>");
+            foreach (var data in ReportFilterData)
+            {
+                sb.AppendFormat(@"
+                                 <tr>
+                                    <td>{0}</td>
+                                    <td>{1}</td>
+                                    <td>{2}</td>
+                                    <td>{3}</td>
+                                    <td>{4}</th>
+                                  </tr>", data.Type, data.UnitsSold, data.GrossSales, data.Discounts, data.Profit);
+            }
+            sb.Append(@"
+                    </table>
+                    </body>
+                    </html>
+                ");
+
+            return sb.ToString();
+
         }
-    }
+
+        public string ExcelCreator(ReportResultDtos ReportFilterData)
+        {
+            DataTable dt = new DataTable("Grid");
+         
+            if (ReportFilterData.reportProductDiscountDtos.Count>0)
+            {
+                dt.Columns.AddRange(new DataColumn[2] { new DataColumn("Type"),
+                                     new DataColumn("UnitsSold")});
+                foreach (var report in ReportFilterData.reportProductDiscountDtos)
+                {
+                    dt.Rows.Add(report.Type, report.Percent);
+                }
+            }
+            else if(ReportFilterData.reportGetDtos.Count > 0)
+            {
+                dt.Columns.AddRange(new DataColumn[5] { new DataColumn("Product"),
+                                     new DataColumn("UnitsSold"), new DataColumn("Discount"), new DataColumn("Discounts"), new DataColumn("Profit") });
+                foreach (var report in ReportFilterData.reportGetDtos)
+                {
+                    dt.Rows.Add(report.Type, report.UnitsSold,report.GrossSales,report.Discounts,report.Profit);
+                }
+            }
+            string fileName =Guid.NewGuid().ToString()+"Grid.xlsx";
+            string path = Directory.GetCurrentDirectory() + "/wwwroot/" + fileName;
+            using (XLWorkbook wb = new XLWorkbook())
+            {
+                wb.Worksheets.Add(dt);
+
+                using (FileStream stream = new FileStream(path, FileMode.CreateNew))
+                {
+                    wb.SaveAs(stream);
+                }
+                //using (MemoryStream stream = new MemoryStream())
+                //{
+                //    wb.SaveAs(stream);
+                //    stream.ToArray();
+                //    File(stream.ToArray(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "Grid.xlsx");
+                //}
+            }
+            return path;
+        }
+    }   
 }
