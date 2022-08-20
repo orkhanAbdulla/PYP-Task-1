@@ -22,23 +22,24 @@ namespace ExcelUploadReadDataSave.Api.ServiceExtentions
                     if (contextFeature != null)
                     {
                         message = contextFeature.Error.Message;
-                         if (contextFeature.Error is FileFormatException)
+                         if (contextFeature.Error is System.IO.FileFormatException)
                         {
                             code = 400;
                         }
-                        //else if (contextFeature.Error is ItemNotFoundException)
-                        //{
-                        //    code = 404;
-                        //}
+                        else if (contextFeature.Error is NotReportTypeException)
+                        {
+                            code = 400;
+                        }
+                        else if (contextFeature.Error is DateIntervalException)
+                        {
+                            code = 400;
+                        }
                         //else if (contextFeature.Error is RecordAlreadyExistException)
                         //{
                         //    code = 409;
                         //}
-                    
-                        //else if (contextFeature.Error is ItemNotFoundException)
-                        //{
-                        //    code = 400;
-                        //}
+
+
                     }
                     context.Response.StatusCode = code;
                     var JsonStr = JsonConvert.SerializeObject(new

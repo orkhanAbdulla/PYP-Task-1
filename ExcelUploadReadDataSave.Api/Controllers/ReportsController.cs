@@ -2,6 +2,8 @@
 using ExcelUploadReadDataSave.Application.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ExcelUploadReadDataSave.Application.CustomExceptions;
+using static ExcelUploadReadDataSave.Application.Utilis.Enums;
 
 namespace ExcelUploadReadDataSave.Api.Controllers
 {
@@ -10,10 +12,15 @@ namespace ExcelUploadReadDataSave.Api.Controllers
     public class ReportsController : ControllerBase
     {
         private readonly IReportService _reportService;
+        private readonly IMailService _mailService;
+        private readonly IFileManager _fileManager;
 
-        public ReportsController(IReportService reportService)
+
+        public ReportsController(IReportService reportService, IMailService mailService, IFileManager fileManager)
         {
             _reportService = reportService;
+            _mailService = mailService;
+            _fileManager = fileManager;
         }
         [HttpPost("")]
         public async Task<IActionResult> UploadData([FromForm]ReportUploadFileDto reportUploadFileDto)
@@ -21,5 +28,16 @@ namespace ExcelUploadReadDataSave.Api.Controllers
            await _reportService.UploadDataFile(reportUploadFileDto);
            return Ok();
         }
+        [HttpGet("")]
+        public async Task<IActionResult> SendReport(int type, [FromQuery] SendReportDto sendReportDto)
+        {
+            ReportResultDtos reportResultDto=await _reportService.GetReport(sendReportDto,type);
+            string path=_fileManager.ExcelCreator(reportResultDto);
+            ReportAtchementlDto reportAtchementlDto = new() { Atchement= path, toEmail= sendReportDto.toMail};
+            await _mailService.SendFileAtchemenEmail(reportAtchementlDto);
+            return Ok();
+        }
+    
+
     }
 }
