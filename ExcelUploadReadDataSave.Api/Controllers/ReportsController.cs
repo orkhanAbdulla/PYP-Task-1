@@ -14,13 +14,14 @@ namespace ExcelUploadReadDataSave.Api.Controllers
         private readonly IReportService _reportService;
         private readonly IMailService _mailService;
         private readonly IFileManager _fileManager;
-
+        private readonly ILogger _logger;
 
         public ReportsController(IReportService reportService, IMailService mailService, IFileManager fileManager)
         {
             _reportService = reportService;
             _mailService = mailService;
             _fileManager = fileManager;
+         
         }
         [HttpPost("")]
         public async Task<IActionResult> UploadData([FromForm]ReportUploadFileDto reportUploadFileDto)
@@ -28,13 +29,18 @@ namespace ExcelUploadReadDataSave.Api.Controllers
            await _reportService.UploadDataFile(reportUploadFileDto);
            return Ok();
         }
-        [HttpGet("")]
-        public async Task<IActionResult> SendReport(int type, [FromQuery] SendReportDto sendReportDto)
+        [HttpGet("SendReport")]
+        public async Task<IActionResult> SendReport([FromQuery] SendReportDto sendReportDto)
         {
-            ReportResultDtos reportResultDto=await _reportService.GetReport(sendReportDto,type);
+            ReportResultDtos reportResultDto=await _reportService.GetReport(sendReportDto);
+
             string path=_fileManager.ExcelCreator(reportResultDto);
+
             ReportAtchementlDto reportAtchementlDto = new() { Atchement= path, toEmail= sendReportDto.toMail};
             await _mailService.SendFileAtchemenEmail(reportAtchementlDto);
+            _logger.LogInformation($"Send report to {sendReportDto.toMail}");
+            _fileManager.DeleteFile(path);
+
             return Ok();
         }
     
