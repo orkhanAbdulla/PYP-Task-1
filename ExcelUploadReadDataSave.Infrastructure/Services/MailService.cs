@@ -29,19 +29,18 @@ namespace ExcelUploadReadDataSave.Infrastructure.Services
            string fromEmail=Configuration.SendGridEmailSetting("SendGridEmailSetting:FromEmail");
            string fromName=Configuration.SendGridEmailSetting("SendGridEmailSetting:FromName");
 
-            var msg = new SendGridMessage()
-            {
-                From = new EmailAddress(fromEmail, fromName),
-                Subject = "File Attached Report",
-                PlainTextContent = "Check Attached File",
+            var from = new EmailAddress(fromEmail, fromName);
+              string subject = "File Attached Report";
+            var to = new List<EmailAddress>();
+            reportAtchementlDto.emailAddresses.ToList().ForEach(x => to.Add(new EmailAddress(x)));
 
-            };
+           var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, to, subject, "Check Attached File", null);
+
             using (var fileStream = File.OpenRead(reportAtchementlDto.Atchement))
             {
                 await msg.AddAttachmentAsync("file.xlsx", fileStream);
                
             }
-            msg.AddTo(reportAtchementlDto.toEmail);
 
             var response = await _sendGridClient.SendEmailAsync(msg);
             

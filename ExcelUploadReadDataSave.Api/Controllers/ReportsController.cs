@@ -35,7 +35,7 @@ namespace ExcelUploadReadDataSave.Api.Controllers
 
             string path=_fileManager.ExcelCreator(reportResultDto);
 
-            ReportAtchementlDto reportAtchementlDto = new() { Atchement= path, toEmail= sendReportDto.toMail};
+            ReportAtchementlDto reportAtchementlDto = new() { Atchement= path, emailAddresses= sendReportDto.emailAddresses};
             await _mailService.SendFileAtchemenEmail(reportAtchementlDto);
 
             _fileManager.DeleteFile(path);

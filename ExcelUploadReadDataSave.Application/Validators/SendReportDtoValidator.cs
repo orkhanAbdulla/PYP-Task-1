@@ -16,7 +16,7 @@ namespace ExcelUploadReadDataSave.Application.Validators
           .GreaterThan(r => r.StartDate)
           .WithMessage("Start Date is not greater than End Date");
             RuleFor(x => x.Type).NotNull();
-            RuleFor(x => x.toMail).Matches("^[a-z0-9]+(?!.*(?:\\+{2,}|\\-{2,}|\\.{2,}))(?:[\\.+\\-]{0,1}[a-z0-9])*@code.edu\\.az$");
+           RuleForEach(x => x.emailAddresses).Matches("^[a-z0-9]+(?!.*(?:\\+{2,}|\\-{2,}|\\.{2,}))(?:[\\.+\\-]{0,1}[a-z0-9])*@code.edu\\.az$");
         }
     }
 }

@@ -10,6 +10,6 @@ namespace ExcelUploadReadDataSave.Application.DTOs.ReportDto
     public class ReportAtchementlDto
     {
         public string Atchement{ get; set; }
-        public string toEmail { get; set; }
+        public string[] emailAddresses { get; set; }
     }
 }
