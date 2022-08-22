@@ -3,6 +3,7 @@ using ExcelUploadReadDataSave.Application.DTOs.ReportDto;
 using ExcelUploadReadDataSave.Application.Services;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using SendGrid;
 using SendGrid.Helpers.Mail;
 using System;
@@ -16,9 +17,11 @@ namespace ExcelUploadReadDataSave.Infrastructure.Services
     public class MailService : IMailService
     {
         private readonly ISendGridClient _sendGridClient;
-        public MailService(ISendGridClient sendGridClient)
+        private readonly ILogger<MailService> _logger;
+        public MailService(ISendGridClient sendGridClient, ILogger<MailService> logger)
         {
             _sendGridClient = sendGridClient;
+            _logger = logger;
         }
 
         public async Task<string> SendFileAtchemenEmail(ReportAtchementlDto reportAtchementlDto)
@@ -41,7 +44,7 @@ namespace ExcelUploadReadDataSave.Infrastructure.Services
             msg.AddTo(reportAtchementlDto.toEmail);
 
             var response = await _sendGridClient.SendEmailAsync(msg);
-
+            
             string message = response.IsSuccessStatusCode ? "Email Send" : "Email Sending failed";
             return message;
         }

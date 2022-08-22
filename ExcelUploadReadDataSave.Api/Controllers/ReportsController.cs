@@ -28,7 +28,7 @@ namespace ExcelUploadReadDataSave.Api.Controllers
            await _reportService.UploadDataFile(reportUploadFileDto);
            return Ok();
         }
-        [HttpGet("SendReport")]
+        [HttpGet("")]
         public async Task<IActionResult> SendReport([FromQuery] SendReportDto sendReportDto)
         {
             ReportResultDtos reportResultDto=await _reportService.GetReport(sendReportDto);

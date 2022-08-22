@@ -1,7 +1,9 @@
 using ExcelUploadReadDataSave.Api.ServiceExtentions;
 using ExcelUploadReadDataSave.Application;
+using ExcelUploadReadDataSave.Application.Validators;
 using ExcelUploadReadDataSave.Infrastructure;
 using ExcelUploadReadDataSave.Persistence;
+using FluentValidation.AspNetCore;
 using Serilog;
 using Serilog.Context;
 using Serilog.Core;
@@ -16,7 +18,7 @@ using static Serilog.Sinks.MSSqlServer.ColumnOptions;
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddFluentValidation(configuration =>     configuration.RegisterValidatorsFromAssemblyContaining<SendReportDtoValidator>()); ;
 
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices();
@@ -34,16 +36,14 @@ var columnOptions = new ColumnOptions
     }
 };
 
+
 Logger log = new LoggerConfiguration()
     .WriteTo.File("logs/log.txt")
     .WriteTo.MSSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), "logs",
     autoCreateSqlTable: true,
      restrictedToMinimumLevel: LogEventLevel.Verbose,
     columnOptions: columnOptions
-    )
-    .Enrich.FromLogContext()
-    .MinimumLevel.Information()
-    .CreateLogger();
+    ).Enrich.FromLogContext().MinimumLevel.Information().CreateLogger();
 
 builder.Host.UseSerilog(log);
 

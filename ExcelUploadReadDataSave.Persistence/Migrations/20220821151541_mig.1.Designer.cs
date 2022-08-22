@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ExcelUploadReadDataSave.Persistence.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220819133254_mig.1")]
+    [Migration("20220821151541_mig.1")]
     partial class mig1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

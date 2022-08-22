@@ -98,6 +98,38 @@
           }
         }
       },
+      "FluentValidation/11.2.0": {
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.2.0.0"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/11.2.1": {
+        "dependencies": {
+          "FluentValidation": "11.2.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.2.0"
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.2.1.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.2.0": {
+        "dependencies": {
+          "FluentValidation": "11.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.2.0.0"
+          }
+        }
+      },
       "Grpc.Core/2.46.3": {
         "dependencies": {
           "Grpc.Core.Api": "2.46.3",
@@ -1850,6 +1882,8 @@
           "ExcelDataReader": "3.6.0",
           "ExcelDataReader.DataSet": "3.6.0",
           "ExcelUploadReadDataSave.Domain": "1.0.0",
+          "FluentValidation": "11.2.0",
+          "FluentValidation.AspNetCore": "11.2.1",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.EntityFrameworkCore": "6.0.8"
         },
@@ -1947,6 +1981,27 @@
       "sha512": "sha512-R3BVHPs9O+RkExbZYTGT0+9HLbi8ZrNij1Yziyw6znd3J7P3uoIR07uwTLGOogtz1p6+0sna66eBoXu7tBiVQA==",
       "path": "excelnumberformat/1.1.0",
       "hashPath": "excelnumberformat.1.1.0.nupkg.sha512"
+    },
+    "FluentValidation/11.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KV1YBM8T4plLKmShjxfmHMF6X1lDuXgyqE+t8NYNxb7jmMbPnA3u30RsuXAf2NYMv0TBCUQguI2Z6W17c/Dh1A==",
+      "path": "fluentvalidation/11.2.0",
+      "hashPath": "fluentvalidation.11.2.0.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/11.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vtwfqQkQkM1UjG2V7+3TJrhqpnnBR3ciQSufj3M2wim85BaHpC+GG6cUGlzP14NvLhi1RL5ejlpQdFok6ILIpw==",
+      "path": "fluentvalidation.aspnetcore/11.2.1",
+      "hashPath": "fluentvalidation.aspnetcore.11.2.1.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-55xipVg5TvAvnod7QqOw5ewMp2FpZ42iwKsJ4iAoxtlXD33CtdKm7h1JDPTE5aD1ODLEqfaUijqqCqO4f5Wx9Q==",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.2.0",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.11.2.0.nupkg.sha512"
     },
     "Grpc.Core/2.46.3": {
       "type": "package",

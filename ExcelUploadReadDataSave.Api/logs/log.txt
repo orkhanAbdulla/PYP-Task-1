@@ -1159,3 +1159,356 @@ ExcelUploadReadDataSave.Application.CustomExceptions.DateIntervalException: Star
    at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
 2022-08-22 04:27:40.477 +04:00 [ERR] Start Date must be more End date
 2022-08-22 04:27:40.618 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports/SendReport?Type=6&StartDate=01.05.2014&EndDate=01.01.2014&toMail=tabrizth%40code.edu.az - - - 400 - - 691.1818ms
+2022-08-22 04:57:00.551 +04:00 [INF] Now listening on: https://localhost:7194
+2022-08-22 04:57:00.564 +04:00 [INF] Now listening on: http://localhost:5194
+2022-08-22 04:57:00.569 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 04:57:00.570 +04:00 [INF] Hosting environment: Development
+2022-08-22 04:57:00.570 +04:00 [INF] Content root path: C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\
+2022-08-22 04:57:01.295 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 04:57:01.715 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 426.8404ms
+2022-08-22 04:57:01.718 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 04:57:01.723 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 4.9375ms
+2022-08-22 04:57:01.759 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 04:57:01.838 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 78.9504ms
+2022-08-22 04:57:01.998 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 04:57:02.161 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 163.0377ms
+2022-08-22 04:57:25.616 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports/SendReport?StartDate=01.01.2014&EndDate=01.01.2014&toMail=aasasaas - -
+2022-08-22 04:57:25.632 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Program.cs:line 71
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2022-08-22 04:57:25.668 +04:00 [ERR] Input string was not in a correct format.
+2022-08-22 04:57:25.774 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports/SendReport?StartDate=01.01.2014&EndDate=01.01.2014&toMail=aasasaas - - - 500 - - 158.0841ms
+2022-08-22 04:57:57.957 +04:00 [INF] Now listening on: https://localhost:7194
+2022-08-22 04:57:57.981 +04:00 [INF] Now listening on: http://localhost:5194
+2022-08-22 04:57:57.993 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 04:57:57.994 +04:00 [INF] Hosting environment: Development
+2022-08-22 04:57:57.994 +04:00 [INF] Content root path: C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\
+2022-08-22 04:57:59.165 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 04:57:59.853 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 04:57:59.865 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 708.7985ms
+2022-08-22 04:57:59.865 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 11.0809ms
+2022-08-22 04:57:59.895 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 04:58:00.063 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 167.8738ms
+2022-08-22 04:58:00.339 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 04:58:00.884 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 545.8083ms
+2022-08-22 04:58:20.921 +04:00 [INF] Now listening on: https://localhost:7194
+2022-08-22 04:58:20.929 +04:00 [INF] Now listening on: http://localhost:5194
+2022-08-22 04:58:20.932 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 04:58:20.932 +04:00 [INF] Hosting environment: Development
+2022-08-22 04:58:20.932 +04:00 [INF] Content root path: C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\
+2022-08-22 04:58:21.308 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 04:58:21.706 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 04:58:21.706 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 409.0800ms
+2022-08-22 04:58:21.710 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 4.2959ms
+2022-08-22 04:58:21.742 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 04:58:21.774 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.1670ms
+2022-08-22 04:58:22.007 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 04:58:22.173 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 166.2530ms
+2022-08-22 04:58:51.689 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?Type=1&StartDate=01.02.2014&EndDate=01.01.2014&toMail=aasasasa - -
+2022-08-22 04:58:51.707 +04:00 [INF] Executing endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 04:58:51.743 +04:00 [INF] Route matched with {action = "SendReport", controller = "Reports"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendReport(ExcelUploadReadDataSave.Application.DTOs.ReportDto.SendReportDto) on controller ExcelUploadReadDataSave.Api.Controllers.ReportsController (ExcelUploadReadDataSave.Api).
+2022-08-22 04:58:52.043 +04:00 [INF] Executed action ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api) in 295.8846ms
+2022-08-22 04:58:52.045 +04:00 [INF] Executed endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 04:58:52.050 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+ExcelUploadReadDataSave.Application.CustomExceptions.DateIntervalException: Start Date must be more End date
+   at ExcelUploadReadDataSave.Persistence.Services.ReportService.GetReport(SendReportDto sendReportDto) in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\Services\ReportService.cs:line 54
+   at ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport(SendReportDto sendReportDto) in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Controllers\ReportsController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Program.cs:line 75
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2022-08-22 04:58:52.091 +04:00 [ERR] Start Date must be more End date
+2022-08-22 04:58:52.207 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?Type=1&StartDate=01.02.2014&EndDate=01.01.2014&toMail=aasasasa - - - 400 - - 518.4454ms
+2022-08-22 05:02:47.422 +04:00 [INF] Now listening on: https://localhost:7194
+2022-08-22 05:02:47.441 +04:00 [INF] Now listening on: http://localhost:5194
+2022-08-22 05:02:47.447 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 05:02:47.447 +04:00 [INF] Hosting environment: Development
+2022-08-22 05:02:47.447 +04:00 [INF] Content root path: C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\
+2022-08-22 05:02:47.619 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 05:02:47.877 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 05:02:47.877 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 05:02:47.878 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 264.4195ms
+2022-08-22 05:02:47.880 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 3.7529ms
+2022-08-22 05:02:47.908 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.3728ms
+2022-08-22 05:02:48.311 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 05:02:48.475 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 164.1835ms
+2022-08-22 05:02:55.344 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 05:02:55.354 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 9.7492ms
+2022-08-22 05:02:55.372 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 05:02:55.372 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 05:02:55.373 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 0.7600ms
+2022-08-22 05:02:55.383 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.8335ms
+2022-08-22 05:02:55.565 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 05:02:55.569 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.7623ms
+2022-08-22 05:03:03.622 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?Type=1 - -
+2022-08-22 05:03:03.640 +04:00 [INF] Executing endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 05:03:03.673 +04:00 [INF] Route matched with {action = "SendReport", controller = "Reports"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendReport(ExcelUploadReadDataSave.Application.DTOs.ReportDto.SendReportDto) on controller ExcelUploadReadDataSave.Api.Controllers.ReportsController (ExcelUploadReadDataSave.Api).
+2022-08-22 05:03:04.128 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-08-22 05:03:04.140 +04:00 [INF] Executed action ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api) in 459.4585ms
+2022-08-22 05:03:04.141 +04:00 [INF] Executed endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 05:03:04.144 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?Type=1 - - - 400 - application/problem+json;+charset=utf-8 522.1461ms
+2022-08-22 05:03:45.551 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=asasasa - -
+2022-08-22 05:03:45.557 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Program.cs:line 71
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2022-08-22 05:03:45.592 +04:00 [ERR] Input string was not in a correct format.
+2022-08-22 05:03:45.688 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=asasasa - - - 500 - - 136.9116ms
+2022-08-22 05:04:04.889 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?Type=1&StartDate=01.02.2014&EndDate=01.01.2014&toMail=asasasa - -
+2022-08-22 05:04:04.889 +04:00 [INF] Executing endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 05:04:04.889 +04:00 [INF] Route matched with {action = "SendReport", controller = "Reports"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendReport(ExcelUploadReadDataSave.Application.DTOs.ReportDto.SendReportDto) on controller ExcelUploadReadDataSave.Api.Controllers.ReportsController (ExcelUploadReadDataSave.Api).
+2022-08-22 05:04:04.907 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-08-22 05:04:04.908 +04:00 [INF] Executed action ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api) in 18.7345ms
+2022-08-22 05:04:04.908 +04:00 [INF] Executed endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 05:04:04.909 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?Type=1&StartDate=01.02.2014&EndDate=01.01.2014&toMail=asasasa - - - 400 - application/problem+json;+charset=utf-8 20.0123ms
+2022-08-22 05:04:28.024 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=asasasa - -
+2022-08-22 05:04:28.025 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Program.cs:line 71
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2022-08-22 05:04:28.026 +04:00 [ERR] Input string was not in a correct format.
+2022-08-22 05:04:28.027 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=asasasa - - - 500 - - 2.5986ms
+2022-08-22 05:05:44.237 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 05:05:44.248 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 10.9642ms
+2022-08-22 05:05:44.275 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 05:05:44.279 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 05:05:44.280 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 0.6449ms
+2022-08-22 05:05:44.293 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.4931ms
+2022-08-22 05:05:44.416 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 05:05:44.418 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.2440ms
+2022-08-22 05:06:07.259 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=dedwwed - -
+2022-08-22 05:06:07.260 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Program.cs:line 71
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2022-08-22 05:06:07.260 +04:00 [ERR] Input string was not in a correct format.
+2022-08-22 05:06:07.260 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=dedwwed - - - 500 - - 0.8372ms
+2022-08-22 05:06:19.543 +04:00 [INF] Now listening on: https://localhost:7194
+2022-08-22 05:06:19.557 +04:00 [INF] Now listening on: http://localhost:5194
+2022-08-22 05:06:19.561 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 05:06:19.561 +04:00 [INF] Hosting environment: Development
+2022-08-22 05:06:19.562 +04:00 [INF] Content root path: C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\
+2022-08-22 05:06:19.841 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 05:06:20.086 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 248.4791ms
+2022-08-22 05:06:20.095 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 05:06:20.095 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 05:06:20.101 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 6.1685ms
+2022-08-22 05:06:20.141 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.9575ms
+2022-08-22 05:06:20.374 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 05:06:20.533 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.6570ms
+2022-08-22 05:06:36.521 +04:00 [INF] Now listening on: https://localhost:7194
+2022-08-22 05:06:36.532 +04:00 [INF] Now listening on: http://localhost:5194
+2022-08-22 05:06:36.538 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 05:06:36.539 +04:00 [INF] Hosting environment: Development
+2022-08-22 05:06:36.539 +04:00 [INF] Content root path: C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\
+2022-08-22 05:06:36.828 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 05:06:37.058 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 05:06:37.199 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 139.1999ms
+2022-08-22 05:06:37.199 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 375.0334ms
+2022-08-22 05:06:37.212 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 05:06:37.212 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 05:06:37.216 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 4.0632ms
+2022-08-22 05:06:37.256 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.2047ms
+2022-08-22 05:06:37.409 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 05:06:37.536 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 127.1899ms
+2022-08-22 05:06:41.492 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 05:06:41.498 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 5.6927ms
+2022-08-22 05:06:41.514 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 05:06:41.514 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 05:06:41.515 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 0.8423ms
+2022-08-22 05:06:41.523 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.3785ms
+2022-08-22 05:06:41.640 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 05:06:41.643 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.3711ms
+2022-08-22 05:06:55.538 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 05:06:55.549 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 10.5481ms
+2022-08-22 05:06:55.570 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 05:06:55.570 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 05:06:55.571 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 0.4853ms
+2022-08-22 05:06:55.577 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.0736ms
+2022-08-22 05:06:55.700 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 05:06:55.701 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.1503ms
+2022-08-22 05:07:01.776 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports - -
+2022-08-22 05:07:01.787 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Program.cs:line 71
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2022-08-22 05:07:01.821 +04:00 [ERR] Input string was not in a correct format.
+2022-08-22 05:07:01.916 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports - - - 500 - - 139.7694ms
+2022-08-22 05:07:28.299 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=asasaa - -
+2022-08-22 05:07:28.304 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Program.cs:line 71
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2022-08-22 05:07:28.305 +04:00 [ERR] Input string was not in a correct format.
+2022-08-22 05:07:28.306 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=asasaa - - - 500 - - 6.6968ms
+2022-08-22 05:08:06.083 +04:00 [INF] Now listening on: https://localhost:7194
+2022-08-22 05:08:06.097 +04:00 [INF] Now listening on: http://localhost:5194
+2022-08-22 05:08:06.103 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 05:08:06.103 +04:00 [INF] Hosting environment: Development
+2022-08-22 05:08:06.104 +04:00 [INF] Content root path: C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\
+2022-08-22 05:08:06.382 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 05:08:06.808 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 05:08:06.808 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 05:08:06.812 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 435.0299ms
+2022-08-22 05:08:06.813 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 5.5016ms
+2022-08-22 05:08:06.831 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.4659ms
+2022-08-22 05:08:07.012 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 05:08:07.172 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 160.5922ms
+2022-08-22 05:08:25.103 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=axaxa - -
+2022-08-22 05:08:25.116 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Program.cs:line 71
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2022-08-22 05:08:25.137 +04:00 [ERR] Input string was not in a correct format.
+2022-08-22 05:08:25.233 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=axaxa - - - 500 - - 129.7377ms
+2022-08-22 05:08:41.482 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?Type=1&StartDate=01.02.2014&EndDate=01.01.2014&toMail=axaxa - -
+2022-08-22 05:08:41.486 +04:00 [INF] Executing endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 05:08:41.515 +04:00 [INF] Route matched with {action = "SendReport", controller = "Reports"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendReport(ExcelUploadReadDataSave.Application.DTOs.ReportDto.SendReportDto) on controller ExcelUploadReadDataSave.Api.Controllers.ReportsController (ExcelUploadReadDataSave.Api).
+2022-08-22 05:08:41.918 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-08-22 05:08:41.930 +04:00 [INF] Executed action ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api) in 406.7441ms
+2022-08-22 05:08:41.931 +04:00 [INF] Executed endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 05:08:41.933 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?Type=1&StartDate=01.02.2014&EndDate=01.01.2014&toMail=axaxa - - - 400 - application/problem+json;+charset=utf-8 451.1265ms
+2022-08-22 05:09:03.042 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=axaxa - -
+2022-08-22 05:09:03.042 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Program.cs:line 71
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2022-08-22 05:09:03.043 +04:00 [ERR] Input string was not in a correct format.
+2022-08-22 05:09:03.044 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=axaxa - - - 500 - - 2.5293ms
+2022-08-22 05:09:05.757 +04:00 [INF] Now listening on: https://localhost:7194
+2022-08-22 05:09:05.771 +04:00 [INF] Now listening on: http://localhost:5194
+2022-08-22 05:09:05.777 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 05:09:05.777 +04:00 [INF] Hosting environment: Development
+2022-08-22 05:09:05.777 +04:00 [INF] Content root path: C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\
+2022-08-22 05:09:06.055 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 05:09:06.420 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 05:09:06.420 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 05:09:06.425 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 4.5866ms
+2022-08-22 05:09:06.425 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 373.9846ms
+2022-08-22 05:09:06.481 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.0931ms
+2022-08-22 05:09:06.609 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 05:09:06.758 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 148.3196ms
+2022-08-22 05:09:41.524 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=wdwdwdwd - -
+2022-08-22 05:09:41.545 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Program.cs:line 71
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2022-08-22 05:09:41.573 +04:00 [ERR] Input string was not in a correct format.
+2022-08-22 05:09:41.696 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=wdwdwdwd - - - 500 - - 172.4246ms
+2022-08-22 05:11:37.341 +04:00 [INF] Now listening on: https://localhost:7194
+2022-08-22 05:11:37.368 +04:00 [INF] Now listening on: http://localhost:5194
+2022-08-22 05:11:37.378 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 05:11:37.379 +04:00 [INF] Hosting environment: Development
+2022-08-22 05:11:37.379 +04:00 [INF] Content root path: C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\
+2022-08-22 05:11:37.969 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 05:11:38.437 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 05:11:38.440 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 481.3794ms
+2022-08-22 05:11:38.461 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 23.8468ms
+2022-08-22 05:11:38.477 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 05:11:38.523 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.8467ms
+2022-08-22 05:11:38.703 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 05:11:38.921 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 218.5166ms
+2022-08-22 05:12:10.638 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=tabrizah%40gmail.com - -
+2022-08-22 05:12:10.750 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Program.cs:line 71
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2022-08-22 05:12:10.826 +04:00 [ERR] Input string was not in a correct format.
+2022-08-22 05:12:11.037 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?StartDate=01.02.2014&EndDate=01.01.2014&toMail=tabrizah%40gmail.com - - - 500 - - 397.9821ms
+2022-08-22 05:12:25.989 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?Type=6&StartDate=01.02.2014&EndDate=01.01.2014&toMail=tabrizah%40gmail.com - -
+2022-08-22 05:12:25.999 +04:00 [INF] Executing endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 05:12:26.037 +04:00 [INF] Route matched with {action = "SendReport", controller = "Reports"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendReport(ExcelUploadReadDataSave.Application.DTOs.ReportDto.SendReportDto) on controller ExcelUploadReadDataSave.Api.Controllers.ReportsController (ExcelUploadReadDataSave.Api).
+2022-08-22 05:12:26.713 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-08-22 05:12:26.732 +04:00 [INF] Executed action ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api) in 679.5947ms
+2022-08-22 05:12:26.734 +04:00 [INF] Executed endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 05:12:26.739 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?Type=6&StartDate=01.02.2014&EndDate=01.01.2014&toMail=tabrizah%40gmail.com - - - 400 - application/problem+json;+charset=utf-8 750.5921ms
+2022-08-22 05:13:08.631 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?Type=6&StartDate=01.02.2014&EndDate=01.01.2014&toMail=tabrizah%40code.edu.com - -
+2022-08-22 05:13:08.636 +04:00 [INF] Executing endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 05:13:08.640 +04:00 [INF] Route matched with {action = "SendReport", controller = "Reports"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendReport(ExcelUploadReadDataSave.Application.DTOs.ReportDto.SendReportDto) on controller ExcelUploadReadDataSave.Api.Controllers.ReportsController (ExcelUploadReadDataSave.Api).
+2022-08-22 05:13:08.695 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-08-22 05:13:08.695 +04:00 [INF] Executed action ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api) in 49.0805ms
+2022-08-22 05:13:08.695 +04:00 [INF] Executed endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 05:13:08.695 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?Type=6&StartDate=01.02.2014&EndDate=01.01.2014&toMail=tabrizah%40code.edu.com - - - 400 - application/problem+json;+charset=utf-8 64.1635ms
+2022-08-22 05:14:53.605 +04:00 [INF] Now listening on: https://localhost:7194
+2022-08-22 05:14:53.619 +04:00 [INF] Now listening on: http://localhost:5194
+2022-08-22 05:14:53.624 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 05:14:53.624 +04:00 [INF] Hosting environment: Development
+2022-08-22 05:14:53.624 +04:00 [INF] Content root path: C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\
+2022-08-22 05:14:54.142 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 05:14:54.436 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 304.5203ms
+2022-08-22 05:14:54.484 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 05:14:54.486 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 05:14:54.492 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 7.6489ms
+2022-08-22 05:14:54.509 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.9886ms
+2022-08-22 05:14:54.704 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 05:14:54.882 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 178.0703ms
+2022-08-22 05:15:08.508 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?toMail=tabrizah%40code.edu.az - -
+2022-08-22 05:15:08.526 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Program.cs:line 71
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2022-08-22 05:15:08.549 +04:00 [ERR] Input string was not in a correct format.
+2022-08-22 05:15:08.661 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?toMail=tabrizah%40code.edu.az - - - 500 - - 152.4719ms
+2022-08-22 05:15:13.137 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports?Type=1&toMail=tabrizah%40code.edu.az - -
+2022-08-22 05:15:13.142 +04:00 [INF] Executing endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 05:15:13.181 +04:00 [INF] Route matched with {action = "SendReport", controller = "Reports"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendReport(ExcelUploadReadDataSave.Application.DTOs.ReportDto.SendReportDto) on controller ExcelUploadReadDataSave.Api.Controllers.ReportsController (ExcelUploadReadDataSave.Api).
+2022-08-22 05:15:13.571 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-08-22 05:15:13.579 +04:00 [INF] Executed action ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api) in 392.722ms
+2022-08-22 05:15:13.580 +04:00 [INF] Executed endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 05:15:13.582 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports?Type=1&toMail=tabrizah%40code.edu.az - - - 400 - application/problem+json;+charset=utf-8 445.1659ms

@@ -108,3 +108,6 @@ C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\obj\Debu
 C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\obj\Debug\net6.0\ExcelUploadReadDataSave.Api.pdb
 C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\obj\Debug\net6.0\ExcelUploadReadDataSave.Api.genruntimeconfig.cache
 C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\obj\Debug\net6.0\ref\ExcelUploadReadDataSave.Api.dll
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E/pVutwu9g/y2rpjYd17DmKTrB2g3MpRTmMSM2EeX09r3YfGHKDkYOyGkNP3RbS7X+McY0mWnb/Gdbkxw7n9gQ==",
+  "dgSpecHash": "Jlmwz+qdp+3Wbo0rNK5uqGzIaO4csMlXo5S1DtdHtpdD0iCah68RNnxzFFHm3CjtmcJ7OHy2J+LdG9Q/ceFatg==",
   "success": true,
   "projectFilePath": "C:\\Users\\hp\\Desktop\\ExcelUploadReadDataSave\\ExcelUploadReadDataSave.Infrastructure\\ExcelUploadReadDataSave.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,9 @@
     "C:\\Users\\hp\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\excelnumberformat\\1.1.0\\excelnumberformat.1.1.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\fluentvalidation\\11.2.0\\fluentvalidation.11.2.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.1\\fluentvalidation.aspnetcore.11.2.1.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.0\\fluentvalidation.dependencyinjectionextensions.11.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

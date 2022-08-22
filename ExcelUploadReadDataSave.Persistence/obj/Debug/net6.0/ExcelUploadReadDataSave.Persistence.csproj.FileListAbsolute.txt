@@ -4,7 +4,9 @@ C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\
 C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\bin\Debug\net6.0\ExcelUploadReadDataSave.Persistence.pdb
 C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\bin\Debug\net6.0\ExcelUploadReadDataSave.Application.dll
 C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\bin\Debug\net6.0\ExcelUploadReadDataSave.Domain.dll
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\bin\Debug\net6.0\ExcelUploadReadDataSave.Infrastructure.dll
 C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\bin\Debug\net6.0\ExcelUploadReadDataSave.Application.pdb
+C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\bin\Debug\net6.0\ExcelUploadReadDataSave.Infrastructure.pdb
 C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\bin\Debug\net6.0\ExcelUploadReadDataSave.Domain.pdb
 C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\obj\Debug\net6.0\ExcelUploadReadDataSave.Persistence.csproj.AssemblyReference.cache
 C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\obj\Debug\net6.0\ExcelUploadReadDataSave.Persistence.GeneratedMSBuildEditorConfig.editorconfig
@@ -17,5 +19,3 @@ C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\
 C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\obj\Debug\net6.0\ExcelUploadReadDataSave.Persistence.pdb
 C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\obj\Debug\net6.0\ExcelUploadReadDataSave.Persistence.genruntimeconfig.cache
 C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\obj\Debug\net6.0\ref\ExcelUploadReadDataSave.Persistence.dll
-C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\bin\Debug\net6.0\ExcelUploadReadDataSave.Infrastructure.dll
-C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\bin\Debug\net6.0\ExcelUploadReadDataSave.Infrastructure.pdb

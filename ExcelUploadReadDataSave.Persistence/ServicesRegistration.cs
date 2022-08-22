@@ -24,7 +24,6 @@ namespace ExcelUploadReadDataSave.Persistence
             services.AddScoped<IReportRepository, ReportRepository>();
             services.AddScoped<IReportService, ReportService>();
             services.AddScoped<IFileManager, FileManager>();
-
         }
     }
 }
