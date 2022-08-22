@@ -11,6 +11,6 @@ namespace ExcelUploadReadDataSave.Application.Services
     public interface IReportService
     {
       Task UploadDataFile(ReportUploadFileDto reportUploadFileDto);
-      Task<ReportResultDtos> GetReport(SendReportDto sendReportDto, int type);
+      Task<ReportResultDtos> GetReport(SendReportDto sendReportDto);
     }
 }
