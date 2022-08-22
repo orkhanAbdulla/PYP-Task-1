@@ -1052,3 +1052,110 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'logger')
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
 2022-08-22 03:23:24.134 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports/SendReport?Type=4&StartDate=01.01.2014&EndDate=01.02.2014&toMail=rasular%40code.edu.az - - - 500 - - 3954.9291ms
+2022-08-22 03:53:42.822 +04:00 [INF] Now listening on: https://localhost:7194
+2022-08-22 03:53:42.839 +04:00 [INF] Now listening on: http://localhost:5194
+2022-08-22 03:53:42.845 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 03:53:42.845 +04:00 [INF] Hosting environment: Development
+2022-08-22 03:53:42.845 +04:00 [INF] Content root path: C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\
+2022-08-22 03:53:43.630 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 03:53:44.145 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 529.1436ms
+2022-08-22 03:53:44.166 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 03:53:44.171 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 5.6066ms
+2022-08-22 03:53:44.191 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 03:53:44.243 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.0057ms
+2022-08-22 03:53:44.560 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 03:53:44.812 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 251.7774ms
+2022-08-22 03:54:35.038 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports/SendReport?Type=3&StartDate=01.01.2014&EndDate=02.02.2014&toMail=rasular%40code.edu.az - -
+2022-08-22 03:54:35.064 +04:00 [INF] Executing endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 03:54:35.105 +04:00 [INF] Route matched with {action = "SendReport", controller = "Reports"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendReport(ExcelUploadReadDataSave.Application.DTOs.ReportDto.SendReportDto) on controller ExcelUploadReadDataSave.Api.Controllers.ReportsController (ExcelUploadReadDataSave.Api).
+2022-08-22 03:54:36.140 +04:00 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-08-22 03:54:36.643 +04:00 [INF] Executed DbCommand (32ms) [Parameters=[@__sendReportDto_StartDate_0='?' (DbType = DateTime2), @__sendReportDto_EndDate_1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Product] AS [Type], COALESCE(SUM([r].[Discounts]), 0.0E0) AS [UnitsSold], COALESCE(SUM([r].[GrossSales]), CAST(0 AS bigint)) AS [GrossSales], COALESCE(SUM([r].[Profit]), 0.0E0) AS [Profit]
+FROM [Reports] AS [r]
+WHERE ([r].[Data] >= @__sendReportDto_StartDate_0) AND ([r].[Data] <= @__sendReportDto_EndDate_1)
+GROUP BY [r].[Product]
+2022-08-22 03:54:38.043 +04:00 [INF] Start processing HTTP request POST "https://api.sendgrid.com/v3/mail/send"
+2022-08-22 03:54:38.044 +04:00 [INF] Sending HTTP request POST "https://api.sendgrid.com/v3/mail/send"
+2022-08-22 03:54:39.175 +04:00 [INF] Received HTTP response headers after 1127.1354ms - 202
+2022-08-22 03:54:39.176 +04:00 [INF] End processing HTTP request after 1137.6602ms - 202
+2022-08-22 03:54:39.191 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2022-08-22 03:54:39.197 +04:00 [INF] Executed action ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api) in 4086.7133ms
+2022-08-22 03:54:39.198 +04:00 [INF] Executed endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 03:54:39.204 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports/SendReport?Type=3&StartDate=01.01.2014&EndDate=02.02.2014&toMail=rasular%40code.edu.az - - - 200 0 - 4166.3947ms
+2022-08-22 03:54:50.453 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports/SendReport?Type=3&StartDate=05.05.2014&EndDate=02.02.2014&toMail=rasular%40code.edu.az - -
+2022-08-22 03:54:50.454 +04:00 [INF] Executing endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 03:54:50.454 +04:00 [INF] Route matched with {action = "SendReport", controller = "Reports"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendReport(ExcelUploadReadDataSave.Application.DTOs.ReportDto.SendReportDto) on controller ExcelUploadReadDataSave.Api.Controllers.ReportsController (ExcelUploadReadDataSave.Api).
+2022-08-22 03:54:50.458 +04:00 [INF] Executed action ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api) in 3.1861ms
+2022-08-22 03:54:50.458 +04:00 [INF] Executed endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 03:54:50.465 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+ExcelUploadReadDataSave.Application.CustomExceptions.DateIntervalException: Start Date must be more End date
+   at ExcelUploadReadDataSave.Persistence.Services.ReportService.GetReport(SendReportDto sendReportDto) in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\Services\ReportService.cs:line 53
+   at ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport(SendReportDto sendReportDto) in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Controllers\ReportsController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Program.cs:line 75
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2022-08-22 03:54:50.519 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports/SendReport?Type=3&StartDate=05.05.2014&EndDate=02.02.2014&toMail=rasular%40code.edu.az - - - 400 - - 65.7461ms
+2022-08-22 04:25:33.806 +04:00 [INF] Now listening on: https://localhost:7194
+2022-08-22 04:25:33.816 +04:00 [INF] Now listening on: http://localhost:5194
+2022-08-22 04:25:33.819 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 04:25:33.820 +04:00 [INF] Hosting environment: Development
+2022-08-22 04:25:33.820 +04:00 [INF] Content root path: C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\
+2022-08-22 04:25:34.557 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 04:25:34.910 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 359.5801ms
+2022-08-22 04:25:34.930 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 04:25:34.937 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 7.4981ms
+2022-08-22 04:25:34.961 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 04:25:35.000 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.7258ms
+2022-08-22 04:25:35.255 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 04:25:35.473 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 217.7878ms
+2022-08-22 04:27:04.899 +04:00 [INF] Now listening on: https://localhost:7194
+2022-08-22 04:27:04.915 +04:00 [INF] Now listening on: http://localhost:5194
+2022-08-22 04:27:04.920 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 04:27:04.921 +04:00 [INF] Hosting environment: Development
+2022-08-22 04:27:04.921 +04:00 [INF] Content root path: C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\
+2022-08-22 04:27:05.806 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - -
+2022-08-22 04:27:06.160 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - - - 200 - text/html;charset=utf-8 364.0534ms
+2022-08-22 04:27:06.162 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - -
+2022-08-22 04:27:06.173 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - - - 200 12024 application/javascript;+charset=utf-8 11.4705ms
+2022-08-22 04:27:06.203 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - -
+2022-08-22 04:27:06.264 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.4936ms
+2022-08-22 04:27:06.625 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - -
+2022-08-22 04:27:06.885 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 260.0037ms
+2022-08-22 04:27:39.926 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/Reports/SendReport?Type=6&StartDate=01.05.2014&EndDate=01.01.2014&toMail=tabrizth%40code.edu.az - -
+2022-08-22 04:27:39.955 +04:00 [INF] Executing endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 04:27:40.006 +04:00 [INF] Route matched with {action = "SendReport", controller = "Reports"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendReport(ExcelUploadReadDataSave.Application.DTOs.ReportDto.SendReportDto) on controller ExcelUploadReadDataSave.Api.Controllers.ReportsController (ExcelUploadReadDataSave.Api).
+2022-08-22 04:27:40.416 +04:00 [INF] Executed action ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api) in 399.2625ms
+2022-08-22 04:27:40.418 +04:00 [INF] Executed endpoint 'ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport (ExcelUploadReadDataSave.Api)'
+2022-08-22 04:27:40.423 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+ExcelUploadReadDataSave.Application.CustomExceptions.DateIntervalException: Start Date must be more End date
+   at ExcelUploadReadDataSave.Persistence.Services.ReportService.GetReport(SendReportDto sendReportDto) in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Persistence\Services\ReportService.cs:line 53
+   at ExcelUploadReadDataSave.Api.Controllers.ReportsController.SendReport(SendReportDto sendReportDto) in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Controllers\ReportsController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\Users\hp\Desktop\ExcelUploadReadDataSave\ExcelUploadReadDataSave.Api\Program.cs:line 75
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2022-08-22 04:27:40.477 +04:00 [ERR] Start Date must be more End date
+2022-08-22 04:27:40.618 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/Reports/SendReport?Type=6&StartDate=01.05.2014&EndDate=01.01.2014&toMail=tabrizth%40code.edu.az - - - 400 - - 691.1818ms

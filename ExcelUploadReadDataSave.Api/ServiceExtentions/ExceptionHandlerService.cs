@@ -9,7 +9,7 @@ namespace ExcelUploadReadDataSave.Api.ServiceExtentions
 {
     public static class ExceptionHandlerService
     {
-        public static void AddExceptionHandlerExtention(this IApplicationBuilder app)
+        public static void AddExceptionHandlerExtention<T>(this IApplicationBuilder app,ILogger<T> logger)
         {
             app.UseExceptionHandler(error =>
             {
@@ -21,6 +21,7 @@ namespace ExcelUploadReadDataSave.Api.ServiceExtentions
 
                     if (contextFeature != null)
                     {
+
                         message = contextFeature.Error.Message;
                          if (contextFeature.Error is System.IO.FileFormatException)
                         {
@@ -38,7 +39,7 @@ namespace ExcelUploadReadDataSave.Api.ServiceExtentions
                         //{
                         //    code = 409;
                         //}
-
+                        logger.LogError(contextFeature.Error.Message);
 
                     }
                     context.Response.StatusCode = code;

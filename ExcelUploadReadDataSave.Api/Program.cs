@@ -61,7 +61,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 app.UseSerilogRequestLogging();
-app.AddExceptionHandlerExtention();
+app.AddExceptionHandlerExtention<Program>(app.Services.GetRequiredService<ILogger<Program>>());
 app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseAuthorization();

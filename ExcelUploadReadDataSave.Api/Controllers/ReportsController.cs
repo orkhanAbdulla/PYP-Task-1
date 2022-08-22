@@ -14,7 +14,6 @@ namespace ExcelUploadReadDataSave.Api.Controllers
         private readonly IReportService _reportService;
         private readonly IMailService _mailService;
         private readonly IFileManager _fileManager;
-        private readonly ILogger _logger;
 
         public ReportsController(IReportService reportService, IMailService mailService, IFileManager fileManager)
         {
@@ -38,7 +37,7 @@ namespace ExcelUploadReadDataSave.Api.Controllers
 
             ReportAtchementlDto reportAtchementlDto = new() { Atchement= path, toEmail= sendReportDto.toMail};
             await _mailService.SendFileAtchemenEmail(reportAtchementlDto);
-            _logger.LogInformation($"Send report to {sendReportDto.toMail}");
+
             _fileManager.DeleteFile(path);
 
             return Ok();

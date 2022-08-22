@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6o6j9nI3GUck7nFOVzyuOzTXqLuwM9SOXc29UZ16toI=",
+  "Hash": "fO79C2QgToKLzPNQAQODzk/H2PbqvppLFohoN3GumZI=",
   "Source": "ExcelUploadReadDataSave.Api",
   "BasePath": "_content/ExcelUploadReadDataSave.Api",
   "Mode": "Default",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\65bf72d8-8230-459c-9427-f8b33ebb00afGrid.xlsx"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\Desktop\\ExcelUploadReadDataSave\\ExcelUploadReadDataSave.Api\\wwwroot\\c8a5ef66-5526-4a2d-b478-53102d3cd643Grid.xlsx",
+      "SourceId": "ExcelUploadReadDataSave.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\ExcelUploadReadDataSave\\ExcelUploadReadDataSave.Api\\wwwroot\\",
+      "BasePath": "_content/ExcelUploadReadDataSave.Api",
+      "RelativePath": "c8a5ef66-5526-4a2d-b478-53102d3cd643Grid.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\c8a5ef66-5526-4a2d-b478-53102d3cd643Grid.xlsx"
     }
   ]
 }
